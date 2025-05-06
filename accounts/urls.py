@@ -10,4 +10,6 @@ urlpatterns = [
     path('myAccount/', views.myAccount, name='myAccount'),
     path('customerDashboard/', views.customerDashboard, name='customerDashboard'),
     path('restaurantDashboard/', views.restaurantDashboard, name='restaurantDashboard'),
+
+    path('activate/<uidb64>/<token>/', views.activate, name='activate'),
 ]
